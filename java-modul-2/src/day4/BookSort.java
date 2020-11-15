@@ -66,6 +66,7 @@ class TestBook {
             while (index >= 0 && arr[index].year > element.year) {
                 arr[index + 1] = arr[index];
                 index = index - 1;
+                // index--
             }
             arr[index + 1] = element;
         }
