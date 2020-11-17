@@ -36,6 +36,7 @@ public class LibraryApp {
         myLib.display();
         System.out.println(myLib.getSize());
         myLib.displayDeletedBook();*/
+        myLib.insertionSort();
         myLib.display();
         System.out.println(myLib.search(book1));
 

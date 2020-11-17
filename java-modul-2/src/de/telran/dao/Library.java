@@ -46,8 +46,17 @@ public class Library {
         System.out.println(books[size]);
     }
 
-    public void sortBooks(Book[] book) {
+    public void insertionSort() {
 
+        for (int i = 1; i < size; i++) {
+            int location = i - 1;
+            Book temp = books[i];
+            while (location >= 0 && temp.getAuthor().compareTo(books[location].getAuthor()) < 0) {
+                books[location + 1] = books[location];
+                location = location - 1;
+            }
+            books[location + 1] = temp;
+        }
     }
 
     public int search(Book book) {
